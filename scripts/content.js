@@ -1,8 +1,5 @@
-const article = document.querySelector("article");
+// First of all, I'll catch the user rating graph element
+let userRatingGraph = document.querySelectorAll(".roundbox")[8];
 
-const currentTabUrl = async function getCurrentTabUrl() {
-  const tabs = await chrome.tabs.query({ active: true })
-  return tabs[0].url
-}
-
-console.log("Here is my key" + currentTabUrl);
+// Then, I'll hide the user rating graph
+userRatingGraph.style.display = "none";
